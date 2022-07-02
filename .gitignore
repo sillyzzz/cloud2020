@@ -1,8 +1,12 @@
 /.idea/
-/cloud-provider-payment8001/target/
+/cloud-providr-payment8001/target/
 /cloud-consumer-order80/target/
 /cloud-provider-payment8002/target/
 /cloud-eureka-server7001/target/
 /cloud-eureka-server7002/target/
 /cloud-provider-payment8004/target/
 /cloud-consumerzk-order80/target/
+/cloud-providerconsul-payment8006/target/
+/cloud-providerconsul-payment8006/cloud-providerconsul-payment8006.iml
+/cloud-consumerconsul-order80/target/
+/cloud-provider-payment8001/target/
