@@ -10,3 +10,11 @@
 /cloud-providerconsul-payment8006/cloud-providerconsul-payment8006.iml
 /cloud-consumerconsul-order80/target/
 /cloud-provider-payment8001/target/
+/cloud-consumer-feign-order80/cloud-consumer-feign-order80.iml
+/cloud-provider-hystrix-payment8001/target/
+/cloud-consumer-hystrix-dashboard9001/cloud-consumer-hystrix-dashboard9001.iml
+/cloud-consumer-hystrix-dashboard9001/target/
+/cloud-consumer-feign-hystrix-order80/target/
+/cloud-api-commons/target/
+/cloud-consumer-feign-order80/target/
+
