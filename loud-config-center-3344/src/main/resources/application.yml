@@ -1,0 +1,52 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  cloud-config-center #注册进Eureka服务器的微服务名
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sillyzzz/springcloud-config.git #GitHub上面的git仓库名字
+          username: 857615027@qq.com
+          password: zengjiahui0503
+          ####搜索目录
+          search-paths:
+            - springcloud-config
+#          strict-host-key-checking: false
+#          private-key: |
+#            -----BEGIN OPENSSH PRIVATE KEY-----
+#            b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAaAAAABNlY2RzYS
+#            1zaGEyLW5pc3RwMjU2AAAACG5pc3RwMjU2AAAAQQRr4Rj59lkL+DIdaBcBBknG1DcthZez
+#            ZEMBLISNAp4fhbB5ubO/2BxFQWwfAq+JhtYZsNMg94sNM0pPy7p7s9s5AAAAqMUpokzFKa
+#            JMAAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGvhGPn2WQv4Mh1o
+#            FwEGScbUNy2Fl7NkQwEshI0Cnh+FsHm5s7/YHEVBbB8Cr4mG1hmw0yD3iw0zSk/Lunuz2z
+#            kAAAAgEWRWg20PX+7t+vdPbuG8JT+YyqoSj5vEaiPF6W8BMOcAAAAQODU3NjE1MDI3QHFx
+#            LmNvbQ==
+#            -----END OPENSSH PRIVATE KEY-----
+      ####读取分支
+      label: master
+#rabbitmq相关配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+#服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+
+
+##rabbitmq相关配置,暴露bus刷新配置的端点
+management:
+  endpoints: #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'
+
+
